@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상선택자(before,after)</title>
+    <style>
+        
+        p:not(:last-child):before{
+            content: "★ "
+        }
+        
+        p:first-child{
+            color: blue;
+        }
+        
+        p:nth-child(2){
+            background-color: yellow;
+            display: inline;
+        }
+        p:nth-child(3):after{
+            content: " ★"
+        }
+        p:nth-last-child(2):after{
+            content: " 메로나"
+        }
+        p:last-child:after{
+            content: " 감사합니다."
+        }
+        
+        
+    </style>
+</head>
+<body>
+<!--    div>p{임시$}*5-->
+    <div>
+        <p>나의사랑</p>
+        <p>나의가족</p>
+        <p>행복미래</p>
+        <p>올 때</p>
+        <p>이제 끝</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

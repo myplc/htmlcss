@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>체크박스 응용</title>
+    <style>
+         input:checked {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<body>
+<!--    div>h2+input#hint{임시$}*3-->
+    <div>
+        <h2>기존체크박스</h2>
+        <input type="checkbox" id="hint">힌트포함</input>
+        <input type="checkbox" id="img">이미지포함</input>
+        <input type="checkbox" id="exp">설명포함</input>
+    </div>
+    <hr/>
+    <div>
+        <h2>클릭영역을 확장한 체크박스</h2>
+        <label for="hint2">
+        <input type="checkbox" id="hint2" />힌트포함</label>
+        <label for="img2">
+        <input type="checkbox" id="img2" />이미지포함</label>
+        <label for="exp2">
+        <input type="checkbox" id="exp2" />설명포함</label>    
+        
+    </div>
+    <hr/>
+    <div>
+        <h2>클릭영역을 확장한 체크박스(커서추가)</h2>
+        <label style="cursor:pointer" for="hint3">
+        <input  type="checkbox" id="hint3" />힌트포함</label>
+        <label style="cursor:pointer" for="img3">
+        <input type="checkbox" id="img3" />이미지포함</label>
+        <label style="cursor:pointer" for="exp3">
+        <input  type="checkbox" id="exp3" />설명포함</label>
+    
+</body>
+</html>
